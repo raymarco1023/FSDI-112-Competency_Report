@@ -5,7 +5,7 @@
 {% block content %} 
     <h1>{{post.title}}</h1>
     <p>{{ post.text }}</p>
-    <a href="{% url 'posts_list' %}">Back</a> |
+    Click <a href="{% url 'post_list %}">here</a> to go back to the list of posts. |
     <a href="{% url 'post_edit' post.id %}">Edit Blog</a> |
     <a href="{% url 'post_delete' post.id %}">Delete Blog</a>
 {% endblock content %}
